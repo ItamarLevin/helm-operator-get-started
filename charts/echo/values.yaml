@@ -71,7 +71,7 @@ tolerations: []
 affinity: {}
 
 mongodb:
-  enabled: true
+  enabled: false
   url: Im1vbmdvZGI6Ly91c2VybmFtZTpwYXNzd29yZEBtb25nb2RiOjI3MDE3L2VjaG8i
   persist: true
 
