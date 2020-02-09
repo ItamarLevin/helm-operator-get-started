@@ -8,11 +8,11 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
+  namespace: {{ .Release.Namespace }}
   name: {{ $fullName }}
   labels:
     {{- include "echochart.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
-  namespace: {{ .Release.Namespace }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
