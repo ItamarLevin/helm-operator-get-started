@@ -12,6 +12,7 @@ metadata:
   labels:
     {{- include "echochart.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
+  namespace: {{ .Release.Namespace }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
