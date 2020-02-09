@@ -6,7 +6,7 @@ metadata:
 data:
   # Configuration values can be set as key-value properties
   PORT: {{ .Values.service.port }}
-  LOGLEVEL: "{{ .Values.logLevel }}"
+  LOGLEVEL: {{ .Values.logLevel }}
   {{ if .Values.mongodb.enabled }}
   PERSIST: {{ .Values.mongodb.persist }}
   {{ end }}
