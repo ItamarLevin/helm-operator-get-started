@@ -5,10 +5,10 @@ metadata:
   namespace: {{ .Release.Namespace }}
 data:
   # Configuration values can be set as key-value properties
-  PORT: "{{ .Values.service.port }}"
-  LOGLEVEL: '"{{ .Values.logLevel }}"'
+  PORT: {{ .Values.service.port }}
+  LOGLEVEL: "{{ .Values.logLevel }}"
   {{ if .Values.mongodb.enabled }}
-  PERSIST: "{{ .Values.mongodb.persist }}"
+  PERSIST: {{ .Values.mongodb.persist }}
   {{ end }}
  # MONGODBURL: '"mongodb://username:password@mongodb:27017/echo"'
 
