@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: avitaltamirdeveleap/echo
+  repository: gcr.io/indigo-octagon-267011/echo
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
