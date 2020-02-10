@@ -16,4 +16,3 @@ spec:
   values:
     image:
       repository: gcr.io/indigo-octagon-267011/echo
-      tag: latest
